@@ -92,6 +92,10 @@ set completeopt-=preview
 vnoremap < <gv
 vnoremap > >gv
 
+" These remove Esc delay
+set ttimeout
+set ttimeoutlen=100
+
 " Vim annoyances
 " http://blog.sanctum.geek.nz/vim-annoyances/
 vnoremap u y
