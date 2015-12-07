@@ -33,10 +33,11 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'sunaku/vim-ruby-minitest'
 Plugin 'benmills/vim-golang-alternate'
 
+Plugin 'Chiel92/vim-autoformat'
 " Language plugins
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
-" Plugin 'mbbill/code_complete'
+Plugin 'vim-scripts/c.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir'
 
