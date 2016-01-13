@@ -182,6 +182,9 @@ let NERDTreeMapOpenInTab='\t'
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg', 'reports', 'Godeps', '_workspace', 'gin-bin', 'deps', '_build']
 
+" Git gutter
+let g:gitgutter_max_signs = 5000
+
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 
