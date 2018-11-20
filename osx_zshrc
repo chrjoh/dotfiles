@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh configuration.
-
-export LANG=sv_SE.UTF-8
-export LC_ALL=sv_SE.UTF-8
+export LANG=en_SE.UTF-8
+export LC_ALL=en_SE.UTF-8
+#export LANG=sv_SE.UTF-8
+#export LC_ALL=sv_SE.UTF-8
 #export LANG=se_SE.UTF-8        
 
 # NeoVIM
@@ -65,7 +66,7 @@ alias mysql=/usr/local/mysql/bin/mysql
 alias jsc=/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc
 alias goconvey=goconvey -gobin=godep-go
 alias go4='cd ~/Go/src/github.com/TV4'
-alias bcurl=/usr/local/Cellar/curl/7.52.1/bin/curl
+alias bcurl=/usr/local/Cellar/curl/7.62.0/bin/curl
 alias gbd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..stage"
 
 export GOPATH=/Users/chrjoh/Go  
@@ -78,7 +79,7 @@ export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 export PATH=/Users/chrjoh/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=/Users/chrjoh/Go/bin:$PATH
-export PATH=/Users/chrjoh/projects/kubernetes/platforms/darwin/amd64:$PATH
+#export PATH=/Users/chrjoh/projects/kubernetes/platforms/darwin/amd64:$PATH
 
 #python virtual env
 #export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Users/chrjoh/bin
@@ -89,4 +90,17 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #source /Users/chrjoh/projects/kubernetes/contrib/completions/bash/kubectl
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/chrjoh/projects/tv4/tv4-graphql/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/chrjoh/projects/tv4/tv4-graphql/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/chrjoh/projects/tv4/tv4-graphql/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/chrjoh/projects/tv4/tv4-graphql/node_modules/tabtab/.completions/sls.zsh
