@@ -55,6 +55,9 @@ Plugin 'airblade/vim-gitgutter'
 " Color scheme
 Plugin 'nanotech/jellybeans.vim'
 
+" wiki for vim
+Plugin 'vimwiki/vimwiki'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 
@@ -87,6 +90,8 @@ set sidescrolloff=1
 set noshowmode
 set list listchars=tab:▸\ ,trail:·,extends:>,precedes:<
 set omnifunc=syntaxcomplete#Complete
+
+syntax on
 
 " Disable preview window
 set completeopt-=preview
