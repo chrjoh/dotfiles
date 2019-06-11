@@ -42,6 +42,10 @@ Plugin 'vim-scripts/c.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elmcast/elm-vim'
+Plugin 'mrk21/yaml-vim'
+
+" Buffers
+Plugin 'jlanzarotta/bufexplorer'
 
 " Markup plugins
 Plugin 'tpope/vim-haml'
@@ -91,7 +95,6 @@ set noshowmode
 set list listchars=tab:▸\ ,trail:·,extends:>,precedes:<
 set omnifunc=syntaxcomplete#Complete
 
-syntax on
 
 " Disable preview window
 set completeopt-=preview
@@ -114,6 +117,9 @@ inoremap Jk <Esc>
 inoremap jK <Esc>
 
 nnoremap <silent> <F5> :set paste!<CR>
+
+" Terminal
+tnoremap <Esc> <C-\><C-n>
 
 set shortmess+=I
 set virtualedit=block
@@ -245,4 +251,9 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods   = 1
 let g:go_disable_autoinstall = 1
 let g:go_fmt_command = "goimports"
+
+let g:python_host_prog  = '/usr/local/bin/python2'   " Python 2
+let g:python3_host_prog = '/usr/local/bin/python3'  " Python 3
+
+syntax on
 
